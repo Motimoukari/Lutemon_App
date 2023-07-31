@@ -1,0 +1,79 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/lutemon_info_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Lutemon Info:"
+        tools:ignore="HardcodedText" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/lutemon_details_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            tools:text="Example Lutemon details will be shown here." />
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/lutemon_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lutemon Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/lutemon_attack_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lutemon Attack"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/lutemon_defense_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lutemon Defense"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/create_lutemon_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create New Lutemon"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/lutemon_spinner_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:entries="@array/lutemon_names" />
+
+    <Spinner
+        android:id="@+id/lutemon_spinner_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:entries="@array/lutemon_names" />
+
+    <Button
+        android:id="@+id/start_battle_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Battle"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
